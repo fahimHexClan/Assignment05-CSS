@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd868cce-3017-4274-9abc-44f132109194" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asserts/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asserts/p1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 05.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="fd868cce-3017-4274-9abc-44f132109194" name="Changes" comment="n">
+      <change afterPath="$PROJECT_DIR$/Asserts/images/Fahim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/images/back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/images/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/images/policeStation project.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asserts/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Asserts/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asserts/p1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Asserts/images/p1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -32,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fahimHexClan"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fahimHexClan/Assignment05-CSS.git",
+    "accountId": "835f2a9a-98cf-49af-9e44-d2b7f6b5b1f8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -43,6 +56,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -60,6 +74,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Asserts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -83,11 +100,30 @@
       <workItem from="1712299839637" duration="806000" />
       <workItem from="1712301212861" duration="39000" />
       <workItem from="1712301258541" duration="37000" />
-      <workItem from="1712301499442" duration="622000" />
+      <workItem from="1712301499442" duration="7247000" />
+      <workItem from="1712324004777" duration="7715000" />
+      <workItem from="1712468856030" duration="1270000" />
+      <workItem from="1712677482002" duration="15000" />
+      <workItem from="1712762265584" duration="271000" />
+      <workItem from="1712778165801" duration="48000" />
+      <workItem from="1712822134236" duration="3720000" />
     </task>
+    <task id="LOCAL-00001" summary="n">
+      <option name="closed" value="true" />
+      <created>1712302196979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712302196979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="n" />
+    <option name="LAST_COMMIT_MESSAGE" value="n" />
   </component>
 </project>
