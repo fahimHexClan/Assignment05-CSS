@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd868cce-3017-4274-9abc-44f132109194" name="Changes" comment="n">
+    <list default="true" id="fd868cce-3017-4274-9abc-44f132109194" name="Changes" comment="New">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asserts/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Asserts/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
       <workItem from="1712677482002" duration="15000" />
       <workItem from="1712762265584" duration="271000" />
       <workItem from="1712778165801" duration="48000" />
-      <workItem from="1712822134236" duration="6060000" />
+      <workItem from="1712822134236" duration="8770000" />
     </task>
     <task id="LOCAL-00001" summary="n">
       <option name="closed" value="true" />
@@ -118,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712827175703</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New">
+      <option name="closed" value="true" />
+      <created>1712829595830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712829595830</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="n" />
-    <option name="LAST_COMMIT_MESSAGE" value="n" />
+    <MESSAGE value="New" />
+    <option name="LAST_COMMIT_MESSAGE" value="New" />
   </component>
 </project>
