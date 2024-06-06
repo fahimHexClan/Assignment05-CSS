@@ -212,7 +212,7 @@ span{
 @keyframes words {
     0%,
     20%{
-        content: "FullStrack Developer";
+        content: "FullStrack Engineer";
 
     }
     21%,
@@ -566,93 +566,292 @@ footer ul li{
     .footer{
         padding: 2rem 3%;
     }
+
 }
 
 @media (max-width: 895px) {
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: rgba(0,0,0,0.8);
+        background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar .active{
+
+    .navbar .active {
         display: block;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
-    .home{
+
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
         gap: 3rem;
     }
-    .home-content{
+
+    .home-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 8rem;
         margin-top: 3rem;
     }
-    .home-content p{
+
+    .home-content p {
         max-width: 600px;
         margin: 0 auto;
     }
-    .home-img img{
+
+    .home-img img {
         width: 56vw;
         margin: 3rem 0;
     }
-    .about{
+
+    .about {
         flex-direction: column-reverse;
         padding: 10rem 9% 10rem;
     }
-    .about .heading{
+
+    .about .heading {
         margin: 3rem 0;
     }
-    .about img{
+
+    .about img {
         width: 50vw;
     }
-    .Qualifications h2{
+
+    .Qualifications h2 {
         margin-bottom: 3rem;
     }
-    .Qualifications-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .Qualifications-container {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .project-box{
-        grid-template-columns: repeat(1,1fr);
+
+    .project-box {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .project-box img{
+
+    .project-box img {
         min-width: 42rem;
     }
+
 }
 
+/*gallery*/
+/*.Gallery{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+
+}
+.card__container{
+    display: grid;
+    row-gap: 3.5rem;
+}
+.Card__articale{
+    position: relative;
+    overflow: hidden;
+}
+.card__img{
+    width: 328px;
+    height: 280px;
+    border-radius: 1.5rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+    transform: scale(1.02);
+
+}
+.card__data{
+    width: 280px;
+    background-color:ghostwhite;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0,0%,0%,.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity1s 1s 1s;
+    border: 2px solid var(--main-color);
+
+}
+.card__description{
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: black;
+}
+.card__title{
+    font-size: small;
+    color: black;
+    margin-bottom: .75rem;
+}
+.card__button{
+    text-decoration: none;
+    font-size: small;
+    font-weight: bolder;
+    color: blue;
+
+}
+.card__button:hover{
+    text-decoration: underline;
+}
+
+.Card__articale:hover .card__data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity.3s;
+
+}
+.Card__articale:hover{
+    animation: remove-overflow 2s forwards;
+}
+.Card__articale:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+.Card__articale:not(:hover) .card__data{
+    animation: show-overflow 2s forwards;
+}
+@keyframes show-data {
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow {
+    to{
+        overflow: initial;
+    }
+}
+@keyframes remove-data {
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+
+}*/
+.Gallery *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+
+}
+.Gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.G-container{
+    position: relative;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 
 
+}
+.G-container .G-card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: var(--main-color);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
 
+}
+.G-container .G-card:hover{
+    height: 350px;
+}
+.G-container .G-card .G-imgbx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
 
+}
+.G-container .G-card .G-imgbx img{
+    max-width: 100%;
+    border-radius: 10px;
 
+}
+.G-container .G-card .G-content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    height: 140px; /* Added to align content properly */
+    overflow: hidden; /* Added to hide overflow */
+}
 
-
-
+.G-container .G-card:hover .G-content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.3s;
+    height: auto; /* Added to expand content */
+}
 
 
 

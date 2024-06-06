@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd868cce-3017-4274-9abc-44f132109194" name="Changes" comment="New">
-      <change afterPath="$PROJECT_DIR$/Asserts/images/n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/Oman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/bmich.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/chilhood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/gym.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/innovesta.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/mastermind1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/nature.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/Gallery/working.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asserts/images/s.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asserts/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Asserts/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,25 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/fahim8421/IdeaProjects/Assignment 05/Asserts/images",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fahim8421/IdeaProjects/Assignment 05/Asserts/Gallery&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Asserts/Gallery" />
       <recent name="$PROJECT_DIR$/Asserts/images" />
       <recent name="$PROJECT_DIR$/Asserts" />
     </key>
@@ -78,8 +88,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -108,6 +118,21 @@
       <workItem from="1713248013725" duration="1217000" />
       <workItem from="1713278829920" duration="1891000" />
       <workItem from="1713287915781" duration="3342000" />
+      <workItem from="1713301173539" duration="40000" />
+      <workItem from="1713496445731" duration="356000" />
+      <workItem from="1713501732513" duration="228000" />
+      <workItem from="1713529867229" duration="168000" />
+      <workItem from="1713530265082" duration="28000" />
+      <workItem from="1713608299284" duration="1740000" />
+      <workItem from="1713610112373" duration="101000" />
+      <workItem from="1713813771802" duration="1995000" />
+      <workItem from="1713858854058" duration="5236000" />
+      <workItem from="1713928107383" duration="15469000" />
+      <workItem from="1713966160418" duration="916000" />
+      <workItem from="1713969833741" duration="639000" />
+      <workItem from="1714588946944" duration="666000" />
+      <workItem from="1715846499739" duration="265000" />
+      <workItem from="1715891755452" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="n">
       <option name="closed" value="true" />
@@ -149,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712835421251</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="New">
+      <option name="closed" value="true" />
+      <created>1713301191995</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713301191995</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
