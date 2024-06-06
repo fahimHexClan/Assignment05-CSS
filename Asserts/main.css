@@ -805,8 +805,10 @@ footer ul li{
 .G-container .G-card{
     position: relative;
     max-width: 300px;
-    height: 180px;
-    background: var(--main-color);
+    height: 200px;
+    background-color: rgba(7, 7, 7, 0.548);
+    backdrop-filter: blur(30px);
+    border: 2px solid var(--main-color);
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
@@ -824,7 +826,7 @@ footer ul li{
     height: 260px;
     top: -60px;
     z-index: 1;
-    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 20px rgba(5, 0, 69, 0.2);
 
 }
 .G-container .G-card .G-imgbx img{
@@ -837,7 +839,7 @@ footer ul li{
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
