@@ -805,7 +805,7 @@ footer ul li{
 .G-container .G-card{
     position: relative;
     max-width: 300px;
-    height: 215px;
+    height: 180px;
     background: var(--main-color);
     margin: 30px 10px;
     padding: 20px 15px;
