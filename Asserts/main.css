@@ -806,7 +806,7 @@ footer ul li{
     position: relative;
     max-width: 300px;
     height: 200px;
-    background-color: rgba(7, 7, 7, 0.548);
+    background-color: rgba(41, 45, 45, 0.871);
     backdrop-filter: blur(30px);
     border: 2px solid var(--main-color);
     margin: 30px 10px;
