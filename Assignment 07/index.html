@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nesta POS System</title>
+    <link rel="stylesheet" href="Asserts/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("Asserts/pos1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="banner">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <img src="Asserts/pos.jpg" class="logo" alt="Logo" width="60px" height="50px">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('home')">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('customer')">Customer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('item')">Item</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('order')">Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('orderDetail')">Order Detail</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div id="home" class="page">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-6 text-center">
+                <h1 class="text-light display-1">Nesta POS System</h1>
+                <p class="text-light">A POS system website helps businesses manage sales, process transactions, track inventory, and improve efficiency.</p>
+                <div>
+                    <button type="button" class="btn btn-outline-primary">Watch</button>
+                    <button type="button" class="btn btn-outline-secondary">Subs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="customer" class="page" style="display: none;">
+        <header class="mt-5">
+            <h1 class="text-center text-light">Customer Management</h1>
+            <div class="input-group mt-3">
+                <input type="search" class="form-control" placeholder="Search Customer" aria-label="Search Customer">
+                <button class="btn btn-primary" type="button">Search</button>
+            </div>
+        </header>
+        <br>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="id" class="text-light">Customer Id</label>
+                        <input class="form-control" type="text" id="Id" placeholder="Enter Customer Id">
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="text-light">Customer Name</label>
+                        <input class="form-control" type="text" id="name" placeholder="Enter Customer Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="address" class="text-light">Customer Address</label>
+                        <input class="form-control" type="text" id="address" placeholder="Enter Customer Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="salary" class="text-light">Customer Salary</label>
+                        <input class="form-control" type="text" id="salary" placeholder="Enter Customer Salary">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-3">
+            <button class="btn btn-primary me-2" type="button">Add</button>
+            <button class="btn btn-danger me-2" type="button">Delete</button>
+            <button class="btn btn-success" type="button">Renew</button>
+        </section>
+        <section class="mt-5">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>Sana</td>
+                    <td>Badulla</td>
+                    <td>100,000.00</td>
+                </tr>
+                <tr>
+                    <td>C002</td>
+                    <td>Kamal</td>
+                    <td>Colombo</td>
+                    <td>200,000.00</td>
+                </tr>
+                <tr>
+                    <td>C003</td>
+                    <td>Nimal</td>
+                    <td>Panadura</td>
+                    <td>400,000.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <div id="item" class="page" style="display: none;">
+        <header class="mt-5">
+            <h1 class="text-center text-light">Item Management</h1>
+            <div class="input-group mt-3">
+                <input type="search" class="form-control" placeholder="Search Item" aria-label="Search Item">
+                <button class="btn btn-primary" type="button">Search</button>
+            </div>
+        </header>
+        <br>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="ItemId" class="form-label text-light">Item Id</label>
+                    <input class="form-control mb-3" type="text" id="ItemId" placeholder="Enter Item Id">
+
+                    <label for="ItemName" class="form-label text-light">Item Name</label>
+                    <input class="form-control mb-3" type="text" id="ItemName" placeholder="Enter Item Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="Price" class="form-label text-light">Item Price</label>
+                    <input class="form-control mb-3" type="text" id="ItemPrice" placeholder="Enter Item Price">
+
+                    <label for="Qty" class="form-label text-light">Item Qty</label>
+                    <input class="form-control mb-3" type="text" id="ItemQty" placeholder="Enter Item Qty">
+                </div>
+            </div>
+        </section>
+        <section class="mt-3">
+            <button class="btn btn-primary me-2" type="button">Add</button>
+            <button class="btn btn-danger me-2" type="button">Delete</button>
+            <button class="btn btn-success" type="button">Renew</button>
+        </section>
+        <section class="mt-5">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                <tr>
+                    <th>Item Id</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Item Qty</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>I001</td>
+                    <td>T-Shirt</td>
+                    <td>1000.00</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I002</td>
+                    <td>Shirt</td>
+                    <td>2000.00</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>I003</td>
+                    <td>Trousers</td>
+                    <td>3000.00</td>
+                    <td>250</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <div id="order" class="page" style="display: none;">
+        <!-- Order Management  -->
+        <header class="mt-5">
+            <h1 class="text-center text-success">Order Management</h1>
+
+        </header>
+
+        <main id="Order1">
+            <section>
+                <div class="container mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 mt-3">
+                            <!--bg kiyanne color set eka-->
+                            <div class="card bg-dark  text-white" id="invoiceDetails">
+                                <div class="card-header text-center gradient-text">
+                                    Invoice Details
+                                </div>
+                                <div class="mb-3 col-md-11 ">
+                                    <label for="order_date" class="form-label col-form-label offset-md-1 ms-2">Order Date</label>
+                                    <input type="date" class="form-control " id="order_date" placeholder="Order Date Here">
+                                </div>
+
+                                <div class="mb-3 col-md-11">
+                                    <label for="order_id" class="form-label col-form-label offset-md-1 ms-2">Order Id</label>
+                                    <input type="number" class="form-control" id="order_id" placeholder="Order Id Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="customer_id" class="form-label col-form-label offset-md-1 ms-2">Customer Id</label>
+                                    <input type="number" class="form-control" id="customer_id" placeholder="Customer Id Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="customer_name" class="form-label col-form-label offset-md-1 ms-2">Customer Name</label>
+                                    <input type="number" class="form-control" id="customer_name"
+                                           placeholder="Customer Name Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="total" class="form-label col-form-label offset-md-1 ms-2">Total</label>
+                                    <input type="number" class="form-control" id="total" placeholder="Total Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="discount" class="form-label col-form-label offset-md-1 ms-2">Discount</label>
+                                    <input type="number" class="form-control" id="discount" placeholder="Discount Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="sub_total" class="form-label col-form-label offset-md-1 ms-2">Sub Total</label>
+                                    <input type="number" class="form-control" id="sub_total" placeholder="Sub Total Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="Cash" class="form-label col-form-label offset-md-1 ms-2">Cash</label>
+                                    <input type="number" class="form-control" id="Cash" placeholder="Cash Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="balance" class="form-label col-form-label offset-md-1 ms-2">Balance</label>
+                                    <input type="number" class="form-control" id="balance" placeholder="Balance Here">
+                                </div>
+                                <div class="mt-1 mb-3  offset-md-5 ms-5" id="button">
+                                    <button id="submitBtn" type="submit" class="btn btn-success">Purchase</button>
+                                    <button id="updateBtn" type="button" class="btn btn-primary">Update</button>
+                                    <button type="button" class="btn btn-danger">Danger</button>
+                                    <button type="reset" class="btn btn-warning">Reset</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <div class="card bg-dark text-white" id="orderDetails">
+                                <div class="card-header text-center gradient-text">
+                                    Order Details
+                                </div>
+                                <div class="mb-3 col-md-11 mt-3">
+                                    <label for="item_code" class="form-label col-form-label offset-md-1 ms-2">Item Code</label>
+                                    <input type="number" class="form-control" id="item_code" placeholder="Item Code Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="item_name" class="form-label col-form-label offset-md-1 ms-2">Item Name</label>
+                                    <input type="text" class="form-control" id="item_name" placeholder="Item Name Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="price" class="form-label col-form-label offset-md-1 ms-2">Price</label>
+                                    <input type="number" class="form-control" id="price" placeholder="Price Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="qty_on_hand" class="form-label col-form-label offset-md-1 ms-2">Qty on Hand</label>
+                                    <input type="number" class="form-control" id="qty_on_hand" placeholder="Qty on hand Here">
+                                </div>
+                                <div class="mb-3 col-md-11">
+                                    <label for="Qty" class="form-label col-form-label offset-md-1 ms-2">Total</label>
+                                    <input type="number" class="form-control" id="Qty" placeholder="Qty Here">
+                                </div>
+                                <div class="mt-1 mb-1 offset-md-5 ms-6" id="button1">
+                                    <button id="addBtn" type="button" class="btn btn-primary">Add</button>
+                                    <button type="reset" class="btn btn-warning">Reset</button>
+                                </div>
+                                <div class="col m-3" id="Ordertable">
+                                    <table class="table table-bordered  table-hover ">
+                                        <thead class="table-info ">
+                                        <tr>
+                                            <th scope="col">Item Code</th>
+                                            <th scope="col">Item Name</th>
+                                            <th scope="col">Price Per Kg</th>
+                                            <th scope="col">Qty On Hand</th>
+                                            <th scope="col">Qty</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Pine apple</td>
+                                            <td>120</td>
+                                            <td>100</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Orange</td>
+                                            <td>80</td>
+                                            <td>50</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Banana</td>
+                                            <td>200</td>
+                                            <td>250</td>
+                                            <td>10</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <div id="orderDetail" class="page" style="display: none;">
+        <!-- Order Detail Management  -->
+        <section>
+            <div id="form">
+                <div class="text-center gradient-text text-light mt-3">
+                    <h3>Order Details Form</h3>
+                </div>
+
+                <div class="col" id="table">
+                    <table class="table table-bordered table-hover mt-5">
+                        <thead class="table-info">
+                        <tr>
+                            <th scope="col">Order Id</th>
+                            <th scope="col">Order Date</th>
+                            <th scope="col">Customer Id</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Sub Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>2023-08-04</td>
+                            <td>1</td>
+                            <td>12000</td>
+                            <td>10%</td>
+                            <td>10800</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>2023-08-04</td>
+                            <td>2</td>
+                            <td>12000</td>
+                            <td>10%</td>
+                            <td>10800</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>2023-08-04</td>
+                            <td>3</td>
+                            <td>12000</td>
+                            <td>10%</td>
+                            <td>10800</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Asserts/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function showPage(pageId) {
+        $('.page').hide();
+        $('#' + pageId).show();
+    }
+
+    $(document).ready(function() {
+        showPage('home'); // Show home page by default
+    });
+</script>
+</body>
+</html>
